@@ -6,13 +6,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('angular2/core');
+var my_component_component_1 = require("./my-component.component");
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n        <h1>Angular 2 Boilerplate</h1>\n        <p>Hello World!</p>\n    "
+            template: "\n        <h1>Angular 2 Boilerplate</h1>\n        <h2>Now comes the second component</h2>\n        <my-component></my-component>\n    ",
+            directives: [my_component_component_1.MyComponentComponent]
         })
     ], AppComponent);
     return AppComponent;
